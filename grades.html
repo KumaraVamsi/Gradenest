@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>JNTUK R20 SGPA Calculator</title>
+</head>
+
+<body>
+
+    <h2>SGPA Calculator (JNTUK R20)</h2>
+
+    <div id="subjectSection">
+        Enter Number of Subjects:
+        <input type="number" id="subjectCount">
+        <button onclick="createSubjects()" id="createBtn">Click Here</button>
+    </div>
+
+    <form id="subjectForm"></form>
+
+    <button onclick="calculateSGPA()" id="calcBtn" style="display:none;">
+        Calculate SGPA
+    </button>
+
+    <button onclick="Print_result()" id="printBtn" style="display:none;">
+        Print Result
+    </button>
+
+    <h2 id="result"></h2>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
